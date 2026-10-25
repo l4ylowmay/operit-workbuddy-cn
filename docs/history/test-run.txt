@@ -1,0 +1,54 @@
+
+> operit-workbuddy-cn@0.1.0 test
+> node --test tests/*.test.js
+
+✔ browser login -> pending poll -> token/account -> discovery (mock) (5.602412ms)
+✔ pending login resumes after runtime recreation and account endpoint delay (0.7044ms)
+✔ login cancellation rejects late token results (8.502658ms)
+✔ token refresh rotates and persists before next request (0.613469ms)
+✔ refresh without rotated refresh token retains current token (0.316619ms)
+✔ refresh without TTL uses fresh JWT expiry instead of retaining old TTL (0.408797ms)
+✔ expired refresh credential is never sent (0.534291ms)
+✔ 401 refresh is surfaced safely without account switching (0.370969ms)
+✔ multiple accounts: switch, delete active -> explicit no active account (0.554725ms)
+✔ untrusted authorization URL is rejected before browser launch (0.319174ms)
+✔ login time limit is enforced across resumed runtimes (0.400761ms)
+✔ only CLI-allowed model ids are exposed; malformed/anonymous config fails (0.429512ms)
+✔ 11128 diagnostics contain no arbitrary server text (0.201484ms)
+✔ normal provider conversation uses selected encrypted account and server usage (mock) (7.217966ms)
+✔ streaming native line callback -> Operit intermediate text/tool XML (mock) (2.143267ms)
+✔ function call round trip includes Operit result in the next request (mock) (2.324663ms)
+✔ HTTP400/11128 fails with safe business diagnostics (1.081666ms)
+✔ connection test does not send an inference request or claim paid chat verified (0.522348ms)
+✔ multimodal direct flags fail explicitly before sending (0.362579ms)
+✔ personal and enterprise credits use distinct definitions; unknown fields never mean zero (0.786321ms)
+✔ credit query uses official domain, current account and personal meter request (2.164437ms)
+✔ enterprise edition resolves missing enterprise id before meter query (1.709453ms)
+✔ URL allowlist blocks plaintext HTTP, subdomain tricks, redirects and credentials (1.203014ms)
+✔ native HTTPS adapter configures TLS-default connection, blocks redirects and closes readers (mock Java) (1.493082ms)
+✔ 400 compatibility: system identity/header-neutral history, no mutation (5.006092ms)
+✔ system rewrite never changes user or tool content (0.209011ms)
+✔ model parameters allowlist and reasoning/max_tokens compatibility (0.979428ms)
+✔ multi-turn context including system, assistant, user, summary survives (0.331565ms)
+✔ tool calls and named results become matched OpenAI messages (1.011647ms)
+✔ repeated and parallel tools pair by name and FIFO, not result order (0.550999ms)
+✔ Operit split ASSISTANT/TOOL_CALL turns compile into one parallel call batch (0.489035ms)
+✔ thinking switch sends default effort and respects server effort aliases (1.575122ms)
+✔ interrupted tool history is closed explicitly to prevent orphan calls/400 (0.32752ms)
+✔ orphan or ambiguous tool results fail locally instead of sending HTTP400 (1.020006ms)
+✔ history reasoning is optionally moved to reasoning_content (0.361954ms)
+✔ literal thought/tool-result examples in user and system messages stay intact (0.290941ms)
+✔ SSE: CRLF line normalization, multiline data, thoughts, fragmented tools, usage (1.99172ms)
+✔ truncated SSE never emits executable tool markup (0.174687ms)
+✔ length stop, malformed arguments, unknown tools are rejected atomically (0.743423ms)
+✔ SSE top-level 11128 and malformed JSON are safe failures (1.602054ms)
+✔ actual upstream registration bridge accepts exported provider + Compose screen (11.399545ms)
+✔ Chinese UI login/model/account/credits actions operate without token UI state (3.991261ms)
+ℹ tests 42
+ℹ suites 0
+ℹ pass 42
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 381.159396

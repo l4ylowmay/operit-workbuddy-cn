@@ -1,0 +1,24 @@
+{
+  "checked_at_utc": "2026-10-24T16:05:04.453648+00:00",
+  "authenticated": false,
+  "probes": [
+    {
+      "endpoint": "/v2/plugin/auth/state?platform=CLI",
+      "http": 200,
+      "code": 0,
+      "has_state": true,
+      "auth_scheme": "https",
+      "auth_host": "copilot.tencent.com",
+      "auth_path": "/login",
+      "has_access_token": false,
+      "has_refresh_token": false
+    },
+    {
+      "endpoint": "/v3/config",
+      "http": 200,
+      "code": 0,
+      "models_type": "NoneType",
+      "model_count": 0
+    }
+  ]
+}

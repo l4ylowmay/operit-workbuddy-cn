@@ -1,0 +1,31 @@
+# Dependencies and build output
+node_modules/
+dist/
+__pycache__/
+*.pyc
+
+# Credentials and device-local state
+.env
+.env.*
+!.env.example
+*.vault
+*.vault.*
+workbuddy-cn.lock
+local-data/
+backup/
+device-logs/
+screenshots/
+generated/
+
+# Device/vendor packages and exported sessions
+*.apk
+*.dex
+*.jar
+*.asar
+*.asar.*
+*.log
+*.jsonl
+*.toolpkg
+*.zip
+*.tar.gz
+.DS_Store

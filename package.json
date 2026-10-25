@@ -1,0 +1,20 @@
+{
+  "name": "operit-workbuddy-cn",
+  "version": "0.2.1",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "python3 scripts/pack.py"
+  },
+  "license": "MIT",
+  "author": "l4ylowmay and WorkBuddy Operit contributors",
+  "description": "Third-party Operit ToolPkg for WorkBuddy China, with attributed MIT-licensed upstream adaptations.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/l4ylowmay/operit-workbuddy-cn.git"
+  },
+  "homepage": "https://github.com/l4ylowmay/operit-workbuddy-cn#readme",
+  "bugs": {
+    "url": "https://github.com/l4ylowmay/operit-workbuddy-cn/issues"
+  }
+}

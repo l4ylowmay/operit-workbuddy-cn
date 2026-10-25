@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "toolpkg_id": "io.github.workbuddy_cn.operit",
+  "version": "0.2.1",
+  "api_version": "1.0.0",
+  "main": "src/main.js",
+  "display_name": {
+    "zh": "WorkBuddy 中国区",
+    "en": "WorkBuddy China"
+  },
+  "description": {
+    "zh": "WorkBuddy 中国区：文字、按模型能力发送图片、思考及工具调用。"
+  },
+  "enabled_by_default": false,
+  "subpackages": [
+    {
+      "id": "workbuddy_media",
+      "entry": "src/workbuddy_media.js"
+    }
+  ]
+}
